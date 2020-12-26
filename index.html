@@ -15,7 +15,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Re:clo: Tokyo's first bulk clothing exchanging platform</title>
 </head>
 
@@ -32,6 +32,18 @@
             #intro-example {
                 height: 600px;
             }
+        }
+
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 30px;
+            }
+            .caption {
+            position: absolute;
+            /* top: 0%; */
+            left: 15%;
+            width: 70%;
+        }
         }
 
         .thumbnail {
@@ -62,7 +74,25 @@
             left: 0;
             width: relative;
         }
+
+        .caption3 {
+            width: relative;
+        }
+
+        i {
+            font-size: 2em;
+            height: 1.5em;
+        }
+
+        .info > h3,p{
+            padding: 0 15px 0 15px;
+        }
+
+        .info > img{
+            border-radius: 50%;
+        }
     </style>
+
     <!-- Background image -->
     <div id="intro-example" class="header p-5 text-center bg-image"
         style="background-image: url(./img/photo-1.jpeg); padding:0 !important;">
@@ -75,9 +105,10 @@
                 <div class="thumbnail text-center">
                     <img src="img/window.png" alt="" class="img-responsive" style="width: 100%;">
                     <div class="caption">
-                        <h1>The new revolution for clothing exchange has begun</h1>
+                        <h1>The new revolution for clothing exchange</h1>
                         <br>
-                        <button type="button" class="btn btn-outline-dark">Start viewing</button>
+                        <!-- <button type="button" class="btn btn-outline-dark" href="concept">Start viewing</button> -->
+                        <a href="#concept" class="btn btn-dark btn-outline-light" role="button">Start looking</a>
                     </div>
                 </div>
 
@@ -97,16 +128,16 @@
             <div class="collapse navbar-collapse" id="navbar1">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <h4><a class="nav-link" href="#">Concept</a></h4>
+                        <h4><a class="nav-link" href="#concept">Concept</a></h4>
                     </li>
                     <li class="nav-item">
-                        <h4><a class="nav-link" href="#">Progress</a></h4>
+                        <h4><a class="nav-link" href="#solution">Solution</a></h4>
                     </li>
                     <li class="nav-item">
-                        <h4><a class="nav-link" href="#">Outcome</a></h4> 
+                        <h4><a class="nav-link" href="#outcome">Outcome</a></h4> 
                     </li>
                     <li class="nav-item">
-                        <h4><a class="nav-link" href="#">Future</a></h4>                        
+                        <h4><a class="nav-link" href="#future">Future</a></h4>                        
                     </li>
                 </ul>
             </div>
@@ -115,32 +146,33 @@
     <!-- Sticky nav bar -->
 
     <!-- Concept -->
-    <div class="container">
+    <div class="container" id="concept">
         <!-- <img src="./img/background2.jpeg" class="img-fluid" alt="Responsive image"> -->
 
         <div class="thumbnail2">
             <div class="bg-cover">
             </div>
             <div class="caption2">
-                <img src="./img/folder.png" class="img-fluid" alt="Responsive image" style="width: 15%;">
+                <img src="./img/folder.png" class="img-fluid" alt="Responsive image" style="width: 60%;">
             </div>
         </div>
         <br>
         <br>
         <br>
         <h1>Concept</h1>
-        <h5>august - sep 2020</h5>
+        <h5>May - July 2020</h5>
         <div class="row">
             <div class="col-md-12 col-lg-6 py-4">
-                <img class="center-block" src="./img/sdg1.png" alt="..." style="width: 60%;">
+                <p class="text-center">
+                <img src="./img/sdg1.png" alt="..." style="width: 60%;">
+                </p>
             </div>
             <div class="col-md-12 col-lg-6 py-4">
                 <!-- <img src="img/bg1.jpeg" class="img-fluid" alt=""> -->
+                <h3>Vision</h3>
+                <p>20% of the total carbon dioxide emission comes from clothing production & consumption. Hence, we want to change that, by making clothing consumption greener. By doing this, we are also helping the world to achieve goal 12 & 13 of SDG.</p>
                 <h3>Problem</h3>
                 <p>People want to throw clothing but they don’t have time and not many places to dispose.</p>
-                <h3>Vision</h3>
-                <p>Vision: 20% of all CO2 emission is from activity related to clothing. We want solve problem related
-                    to SGD goal 12: reponsible consumption of clothing</p>
             </div>
         </div>
         <!--/row-->
@@ -150,50 +182,52 @@
     <!-- Concept -->
 
     <!-- Solution -->
-    <div style="background-color: rgb(172, 226, 155); padding:0 !important;">
+    <div id="solution" style="background-color: #2acb8b; padding:0 !important;">
         <br>
         <br>
-        <div class="container padding text-left" >
+        <div class="container padding text-left">
+            <div class="container">
                 <div class="row">
-                    <img src="./img/folder.png" class="img-fluid" alt="Responsive image" style="max-width: 15%">
-                    <!-- <div class="col col-lg-2">
-                    </div> -->
-                    <div class="col-md-auto">
-                        <br>
-                        <h3>Solution</h3>
-                        <h5>We have found that it is is</53>
+                    <div class="caption3">
+                        <img src="./img/folder.png" class="img-fluid" alt="Responsive image" style="width: 60%;">
                     </div>
-                    <div class="col col-lg-7 text-right">
+                    <div class="col col-lg-2">
                         <br>
-                        <h4>A platform for bulk</h4>
+                        <h1>Solution</h1>
+                        <h5>August - Sept 2020</h5>
+                    </div>
+                    <div class="col col-sm-12 col-lg-6 text-right">
+                        <br>
+                        <h4>Re:clo - A platform for bulk clothing exchange for Tokyo dwellers</h4>
                     </div>
                 </div>
 
+            </div>
+            <br>
             <div class="row text-center padding">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <i class="fas fa-coffee"></i>
-                    <h3>Our user 1</h3>
-                    <p>People who are busy and want to upload donate all clothing at once. </p>
+                <div class="col-xs-12 col-sm-6 col-md-4 info">
                     <figure>
                         <img src="img/info1.jpeg" class="figure-img img-fluid rounded" alt="" style="width: 80%;">
                     </figure>
+                    <h3>Personalized shopping experience</h3>
+                    <p>AI & algorithm helps the user find the best matching clothing in size and style. No more trouble with finding a secondhand-clothing that fits</p>                 
+                    <br>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <i class="fas fa-cloud"></i>
-                    <h3>Our user 2</h3>
-                    <p>People who want to save money and use secondhand clothing.</p>
+                <div class="col-xs-12 col-sm-6 col-md-4 info">
                     <figure>
-                        <img src="img/info1.jpeg" class="figure-img img-fluid rounded" alt="" style="width: 80%;">
+                        <img src="img/info2.jpeg" class="figure-img img-fluid rounded" alt="" style="width: 80%;">
                     </figure>
+                    <h3>Exchange all at once</h3>
+                    <p>Quick exchange for user who wants to have all their old clothing gone quickly. Exchange clothing in batch of 10 feature helps user to save time!</p>
+                    <br>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <i class="fas fa-cloud"></i>
-                    <h3>Our platform</h3>
-                    <p>Provide customized shopping and uploading experience so the busy user can give the receiving user
-                        second hand their no longer user clothing.</p>
+                <div class="col-xs-12 col-sm-6 col-md-4 info">
                     <figure>
-                        <img src="img/info1.jpeg" class="figure-img img-fluid rounded" alt="" style="width: 80%;">
+                        <img src="img/info3.jpg" class="figure-img img-fluid rounded" alt="" style="width: 80%;">
                     </figure>
+                    <h3>Budget and Environmentally friendly </h3>
+                    <p>Spending less on clothes while reducing impact on the environment by using secondhand clothing.</p>
+                    <br>
                 </div>
             </div>
             <hr class="my-4">
@@ -201,59 +235,66 @@
         <!-- Solution -->
     </div>
 
-    <!-- Progress -->
-    <div>
+    <!-- Outcome -->
+    <div id="outcome">
         <br>
         <br>
         <div class="container padding text-left">
             <div class="container">
+                
                 <div class="row">
-                    <div class="col col-lg-2">
-                        <img src="./img/folder.png" class="img-fluid" alt="Responsive image" style="width: 100%;">
+                    <div class="col-xs-4 col-sm-12 col-md-4 col-lg-6">
+                        <img src="./img/appdemo.png" class="img-fluid" alt="Responsive image" style="width: 80%;">
                     </div>
-                    <div class="col-md-auto">
-                        <br>
-                        <h3>Progress</h3>
-                        <h5>sth - sth 2020</53>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <img src="./img/photo-2.jpeg" class="img-fluid" alt="Responsive image" style="width: 50%;">
-                    </div>
-                    <div class="col">
-                        <img src="./img/photo-2.jpeg" class="img-fluid" alt="Responsive image" style="width: 50%;">
-                    </div>
-                    <div class="w-100">
-                        <br>
-                    </div>
-                    <div class="col">
-                        <img src="./img/photo-2.jpeg" class="img-fluid" alt="Responsive image" style="width: 50%;">
-                    </div>
-                    <div class="col">
-                        <img src="./img/photo-2.jpeg" class="img-fluid" alt="Responsive image" style="width: 50%;">
+                    <div class="col-xs-4 col-sm-12 col-lg-6">
+                        <div class="col">
+                            <div class="caption3">
+                                <img src="./img/folder.png" class="col-md-6 img-fluid" alt="Responsive image" style="margin-left: -20px; width: 60%;">
+                            </div>
+                            <br>
+                            <h1>Progress</h1>
+                            <h5>Oct - Dec 2020</h5>
+                            <br>
+                            <br>
+                            <i class="fas fa-paint-brush"></i>
+                            <h3>Design</h3>
+                            <p>Re:clo is designed with an emphasis on the user’s experience. User would feel like using a secondhand clothing website but having a fun shopping experience.</p>
+                            <br>
+                            <i class="fas fa-code"></i>
+                            <h3>Front & Back-end</h3>
+                            <p>The format of the platform is Progressive Web-application. It works best on smartphone platform and hence is convenient for casual user. The function includes in the application are: Dashboard, Shopping cart & Order function, Upload function.</p>
+                            <br>
+                            <i class="fas fa-glasses"></i>
+                            <h3>AI & Algorithm</h3>
+                            <p>AI & algorithm are used to make the shopping and upload process smarter and faster. The first function is to automatically classify clothes into categories. The second function is to recommend clothing items to shopper based on matching body size and age.</p>
+                            <br>
+                            <a href="https://reclo.tera-chan.com/" class="btn btn-dark btn-lg " role="button">Visit our website</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Progress -->
+        <!-- Outcome -->
 
 
         <!-- Gallery -->
         <br>
         <br>
         <!-- <div class="container padding"> -->
-        <h3>Gallery</h3>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/info1.jpeg" alt="First slide">
+                    <img class="d-block w-100" src="img/slide0.png" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/info2.jpeg" alt="Second slide">
+                    <img class="d-block w-100" src="img/slide1.jpeg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/info1.jpeg" alt="Third slide">
+                    <img class="d-block w-100" src="img/slide2.jpeg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/slide3.png" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -268,8 +309,12 @@
         <!-- </div>   -->
         <!-- Gallery -->
 
-        <div class="container padding text-center">
-            <img src="img/window.png" alt="Third slide" style="width: 80%;">
+        <div id="future" class="container padding thumbnail text-center">
+            <img src="img/window.png" alt="Third slide" class="img-responsive" style="width: 80%;">
+            <div class="caption">
+                <h1>Future plan</h1>
+                <h3>Pitch our project at INIAD classroom</h3>
+            </div>
         </div>
 
 
