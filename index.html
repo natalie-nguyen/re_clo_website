@@ -41,8 +41,26 @@
         .caption {
             position: absolute;
             top: 35%;
-            left: 0;
+            left: 15%;
+            width: 70%;
+        }
+
+        .bg-cover {
             width: 100%;
+            height: 380px;
+            background: url(./img/background2.jpeg) no-repeat center;
+            background-size: cover;
+        }
+
+        .thumbnail2 {
+            position: relative;
+        }
+
+        .caption2 {
+            position: absolute;
+            top: 75%;
+            left: 0;
+            width: relative;
         }
     </style>
     <!-- Background image -->
@@ -57,8 +75,7 @@
                 <div class="thumbnail text-center">
                     <img src="img/window.png" alt="" class="img-responsive" style="width: 100%;">
                     <div class="caption">
-                        <h1>The new revolution for clothing</h1>
-                        <h1>exchange has begun</h1>
+                        <h1>The new revolution for clothing exchange has begun</h1>
                         <br>
                         <button type="button" class="btn btn-outline-dark">Start viewing</button>
                     </div>
@@ -99,22 +116,25 @@
 
     <!-- Concept -->
     <div class="container">
-        <img src="./img/background2.jpeg" class="img-fluid" alt="Responsive image">
-        <img src="./img/folder.png" class="img-fluid" alt="Responsive image" style="width: 15%;">
+        <!-- <img src="./img/background2.jpeg" class="img-fluid" alt="Responsive image"> -->
+
+        <div class="thumbnail2">
+            <div class="bg-cover">
+            </div>
+            <div class="caption2">
+                <img src="./img/folder.png" class="img-fluid" alt="Responsive image" style="width: 15%;">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
         <h1>Concept</h1>
         <h5>august - sep 2020</h5>
         <div class="row">
             <div class="col-md-12 col-lg-6 py-4">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6 py-4">
-                        <img src="./img/sgd12.png" alt="..." style="width: 60%;">
-                    </div>
-                    <div class="ol-md-12 col-lg-6 py-4">
-                        <img src="./img/sgd13.png" alt="..." style="width: 60%;">
-                    </div>
-                </div>
+                <img class="center-block" src="./img/sdg1.png" alt="..." style="width: 60%;">
             </div>
-            <div class="ol-md-12 col-lg-6 py-4">
+            <div class="col-md-12 col-lg-6 py-4">
                 <!-- <img src="img/bg1.jpeg" class="img-fluid" alt=""> -->
                 <h3>Problem</h3>
                 <p>People want to throw clothing but they don’t have time and not many places to dispose.</p>
@@ -130,16 +150,14 @@
     <!-- Concept -->
 
     <!-- Solution -->
-    <div id="intro-example" class="header p-5 text-center bg-image"
-        style="background-color: rgb(172, 226, 155); padding:0 !important;">
+    <div style="background-color: rgb(172, 226, 155); padding:0 !important;">
         <br>
         <br>
-        <div class="container padding text-left">
-            <div class="container">
+        <div class="container padding text-left" >
                 <div class="row">
-                    <div class="col col-lg-2">
-                        <img src="./img/folder.png" class="img-fluid" alt="Responsive image" style="width: 100%;">
-                    </div>
+                    <img src="./img/folder.png" class="img-fluid" alt="Responsive image" style="max-width: 15%">
+                    <!-- <div class="col col-lg-2">
+                    </div> -->
                     <div class="col-md-auto">
                         <br>
                         <h3>Solution</h3>
@@ -151,7 +169,6 @@
                     </div>
                 </div>
 
-            </div>
             <div class="row text-center padding">
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <i class="fas fa-coffee"></i>
