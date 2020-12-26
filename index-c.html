@@ -34,6 +34,18 @@
             }
         }
 
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 30px;
+            }
+            .caption {
+            position: absolute;
+            /* top: 0%; */
+            left: 15%;
+            width: 70%;
+        }
+        }
+
         .thumbnail {
             position: relative;
         }
@@ -85,9 +97,10 @@
                 <div class="thumbnail text-center">
                     <img src="img/window.png" alt="" class="img-responsive" style="width: 100%;">
                     <div class="caption">
-                        <h1>The new revolution for clothing exchange has begun</h1>
+                        <h1>The new revolution for clothing exchange</h1>
                         <br>
-                        <button type="button" class="btn btn-outline-dark" href="concept">Start viewing</button>
+                        <!-- <button type="button" class="btn btn-outline-dark" href="concept">Start viewing</button> -->
+                        <a href="#concept" class="btn btn-dark btn-outline-light" role="button">Visit our website</a>
                     </div>
                 </div>
 
@@ -223,7 +236,9 @@
                     </div>
                     <div class="col-xs-4 col-sm-12 col-lg-6">
                         <div class="col">
-                            <img src="./img/folder.png" class="col-md-6 img-fluid" alt="Responsive image" style="margin-left: -20px; width: 100%;">
+                            <div class="caption3">
+                                <img src="./img/folder.png" class="col-md-6 img-fluid" alt="Responsive image" style="margin-left: -20px; width: 60%;">
+                            </div>
                             <br>
                             <h1>Progress</h1>
                             <h5>oct - dec 2020</h5>
